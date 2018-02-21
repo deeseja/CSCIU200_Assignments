@@ -5,6 +5,8 @@ import java.text.NumberFormat;
 public class EmployeeDriver {
 
 	public static void main(String[] args) {
+		// Create the Employee class to support the 
+		// methods used below.
 		Employee employee = new Employee();
 		
 		employee.setFirstName("Fred");
