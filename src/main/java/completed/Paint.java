@@ -1,10 +1,5 @@
 package completed;
 
-//***************************************************************
-// File: Paint.java
-//
-// Purpose: Determine how much paint is needed to paint the walls
-// of a room given its length, width, and height //***************************************************************
 import java.util.Scanner;
 // 5 for general syntax
 // 5 for compiling
@@ -12,6 +7,8 @@ import java.util.Scanner;
 // 5 for correct output
 // 3 for calculation
 
+/*Purpose: Determine how much paint is needed to paint the walls
+//of a room given its length, width, and height */
 public class Paint {
 	public static void main(String[] args) {
 		final int COVERAGE = 350;

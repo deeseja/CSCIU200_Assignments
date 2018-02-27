@@ -2,6 +2,8 @@ package exercises;
 
 import java.text.NumberFormat;
 
+import completed.Employee;
+
 public class EmployeeDriver {
 
 	public static void main(String[] args) {
