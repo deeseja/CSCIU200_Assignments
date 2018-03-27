@@ -1,4 +1,4 @@
-package exercises;
+package drivers;
 
 import completed.Customer;
 
@@ -19,13 +19,9 @@ public class CustomerDriver {
 		// should prompt for a PIN entry and set it
 		customer.setPin();
 		int number = 2;
-		if (customer.getPin() < 1000) {
+		if (customer.getPin() != 1000 || false)
 			System.out.println("PIN must be at least 4 characters");
 			System.out.println(number);
-		}
-		else if (true) {
-			System.out.println("meets PIN policy");
-		}
 	}
 
 }

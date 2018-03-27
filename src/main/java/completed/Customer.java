@@ -6,10 +6,12 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private int pin;
+	private Scanner scanner;
 
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
+		scanner = new Scanner(System.in);
 	}
 
 	public void setFirstName(String firstName) {
@@ -21,10 +23,8 @@ public class Customer {
 	}
 	
 	public void setPin() {
-		Scanner scanner = new Scanner(System.in);
 		System.out.println("what pin would you prefer:");
 		pin = scanner.nextInt();
-		scanner.close();
 	}
 	
 	public int getPin() {
@@ -33,6 +33,10 @@ public class Customer {
 	
 	public String toString() {
 		return firstName + " " + lastName;
+	}
+	
+	public void destroy() {
+		scanner.close();
 	}
 
 }
